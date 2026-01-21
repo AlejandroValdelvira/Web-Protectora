@@ -150,7 +150,7 @@ body {
   justify-content: center;
   text-align: center;
   color: white;
-  background-image: url("assets/Portada.webp");
+  background-image: url("../assets/Portada.webp");
   background-size: cover;
   background-position: center;
 }
