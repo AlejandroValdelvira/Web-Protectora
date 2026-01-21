@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refugio Ronroneo - Adopción</title>
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="contenedor contenido-cabecera">
+        <a href="#" class="logo">
+          <img src="assets/logo.png" alt="logo" class="logo-icono" />
+          Protectora Felina
+        </a>
+
+        <nav class="navegacion">
+          <a href="#inicio">Inicio</a>
+          <a href="#adopta">Adopta</a>
+          <a href="#ayuda">Cómo Ayudar</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="boton boton-primario boton-animacion">
+          <span
+            ><img
+              src="assets/corazon-blanco.png"
+              style="height: 20px; margin-bottom: -5px"
+          /></span>
+          Dona Ahora
+        </button>
+      </div>
+    </header>
+
+    <section id="inicio" class="portada">
+      <div class="capa-oscura"></div>
+      <div class="contenido-portada">
+        <h1>Dale un Hogar a un Amigo Felino</h1>
+        <p style="margin-bottom: 20px">
+          Cada gato merece una segunda oportunidad. Ayúdanos a encontrarles el
+          hogar perfecto.
+        </p>
+        <div class="botones">
+          <button class="boton boton-primario boton-grande boton-animacion">
+            <span
+              ><img
+                src="assets/corazon-blanco.png"
+                style="height: 20px; margin-bottom: -5px"
+            /></span>
+            Quiero Adoptar
+          </button>
+          <button class="boton boton-borde-blanco boton-grande">
+            Nuestra Historia
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="estadisticas">
+      <div class="contenedor grid-estadisticas">
+        <div class="dato">
+          <div style="display: flex; flex-direction: row">
+            <span class="numero" id="numero">2500</span
+            ><span class="numero">+</span>
+          </div>
+          <span class="texto">Gatos Adoptados</span>
+        </div>
+        <div class="dato">
+          <span class="numero">150+</span>
+          <span class="texto">En el Refugio</span>
+        </div>
+        <div class="dato">
+          <span class="numero">50+</span>
+          <span class="texto">Voluntarios</span>
+        </div>
+        <div class="dato">
+          <span class="numero">4</span>
+          <span class="texto">Años de Experiencia</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="adopta" class="seccion fondo-claro">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <h2>Gatos en Adopción</h2>
+          <p>
+            Estos adorables felinos están buscando un hogar lleno de amor.
+            ¿Podrías ser tú su nueva familia?
+          </p>
+        </div>
+
+        <div class="grid-tarjetas">
+          <article class="tarjeta">
+            <div class="imagen-contenedor">
+              <img
+                src="assets/Luna.webp"
+                alt="Luna"
+              />
+              <span class="etiqueta">Hembra</span>
+            </div>
+            <div class="contenido-tarjeta">
+              <div class="titulo-tarjeta">
+                <h3>Luna</h3>
+                <span class="icono-genero">
+                  <span
+                    ><img
+                      src="assets/corazon-negro.png"
+                      style="height: 20px; margin-bottom: -5px"
+                  /></span>
+                </span>
+              </div>
+              <div class="detalles">
+                <span>
+                  <span
+                    ><img
+                      src="assets/calendar.png"
+                      style="height: 20px; margin-bottom: -5px"
+                  /></span>
+                  2 años</span
+                >
+                <span>📍 Madrid</span>
+              </div>
+              <p class="descripcion">
+                Luna es una gatita cariñosa y juguetona. Le encanta dormir al
+                sol.
+              </p>
+              <span class="badge-color">Gris</span>
+              <button
+                class="boton boton-primario"
+                style="width: 100%; margin-top: 15px"
+              >
+                Conocer a Luna
+              </button>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="imagen-contenedor">
+              <img
+                src="assets/Simba.webp"
+                alt="Simba"
+              />
+              <span class="etiqueta">Macho</span>
+            </div>
+            <div class="contenido-tarjeta">
+              <div class="titulo-tarjeta">
+                <h3>Simba</h3>
+                <span class="icono-genero">
+                  <span
+                    ><img
+                      src="assets/corazon-negro.png"
+                      style="height: 20px; margin-bottom: -5px"
+                  /></span>
+                </span>
+              </div>
+              <div class="detalles">
+                <span
+                  ><span
+                    ><img
+                      src="assets/calendar.png"
+                      style="height: 20px; margin-bottom: -5px"
+                  /></span>
+                  1 año</span
+                >
+                <span>📍 Barcelona</span>
+              </div>
+              <p class="descripcion">
+                Simba es un gato naranja lleno de energía. Es muy sociable.
+              </p>
+              <span class="badge-color">Naranja</span>
+              <button
+                class="boton boton-primario"
+                style="width: 100%; margin-top: 15px"
+              >
+                Conocer a Simba
+              </button>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="imagen-contenedor">
+              <img
+                src="assets/Oreo.webp"
+                alt="Oreo"
+              />
+              <span class="etiqueta">Macho</span>
+            </div>
+            <div class="contenido-tarjeta">
+              <div class="titulo-tarjeta">
+                <h3>Oreo</h3>
+                <span class="icono-genero">
+                  <span class="icono-genero">
+                    <span
+                      ><img
+                        src="assets/corazon-negro.png"
+                        style="height: 20px; margin-bottom: -5px"
+                    /></span>
+                  </span>
+                </span>
+              </div>
+              <div class="detalles">
+                <span
+                  ><span
+                    ><img
+                      src="assets/calendar.png"
+                      style="height: 20px; margin-bottom: -5px"
+                  /></span>
+                  3 años</span
+                >
+                <span>📍 Valencia</span>
+              </div>
+              <p class="descripcion">
+                Oreo es relajado. Perfecto para hogares tranquilos.
+              </p>
+              <span class="badge-color">Blanco y Negro</span>
+              <button
+                class="boton boton-primario"
+                style="width: 100%; margin-top: 15px"
+              >
+                Conocer a Oreo
+              </button>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="imagen-contenedor">
+              <img
+                src="assets/Misha.webp"
+                alt="Misha"
+              />
+              <span class="etiqueta">Hembra</span>
+            </div>
+            <div class="contenido-tarjeta">
+              <div class="titulo-tarjeta">
+                <h3>Misha</h3>
+                <span class="icono-genero">
+                  <span
+                    ><img
+                      src="assets/corazon-negro.png"
+                      style="height: 20px; margin-bottom: -5px"
+                  /></span>
+                </span>
+              </div>
+              <div class="detalles">
+                <span
+                  ><span
+                    ><img
+                      src="assets/calendar.png"
+                      style="height: 20px; margin-bottom: -5px"
+                  /></span>
+                  4 años</span
+                >
+                <span>📍 Sevilla</span>
+              </div>
+              <p class="descripcion">
+                Misha es elegante y sofisticada. Le gusta la tranquilidad y los
+                mimos.
+              </p>
+              <span class="badge-color">Siamés</span>
+              <button
+                class="boton boton-primario"
+                style="width: 100%; margin-top: 15px"
+              >
+                Conocer a Misha
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="centrar-boton">
+          <button class="boton boton-secundario boton-grande">
+            Ver Todos los Gatos
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="ayuda" class="seccion">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <h2>Cómo Puedes Ayudar</h2>
+          <p>
+            Hay muchas formas de apoyar nuestra misión. Cada contribución hace
+            la diferencia.
+          </p>
+        </div>
+
+        <div class="grid-ayuda">
+          <div class="tarjeta-ayuda">
+            <img
+              src="assets/corazon-rojo.png"
+              alt="Donar"
+              class="icono-ayuda"
+            />
+            <h3>Donaciones</h3>
+            <p>Tu contribución nos ayuda a cuidar de más gatos necesitados.</p>
+            <button class="boton boton-secundario">Donar</button>
+          </div>
+
+          <div class="tarjeta-ayuda">
+            <img
+              src="assets/voluntario.png"
+              alt="Voluntarios"
+              class="icono-ayuda"
+            />
+            <h3>Voluntariado</h3>
+            <p>Únete a nuestro equipo. Ayuda con el cuidado diario.</p>
+            <button class="boton boton-secundario">Ser Voluntario</button>
+          </div>
+
+          <div class="tarjeta-ayuda">
+            <img src="assets/donacion.png" alt="Comida" class="icono-ayuda" />
+            <h3>Donación en Especie</h3>
+            <p>Necesitamos comida, arena, juguetes y medicamentos.</p>
+            <button class="boton boton-secundario">Ver Lista</button>
+          </div>
+
+          <div class="tarjeta-ayuda">
+            <img src="assets/casa.png" alt="Casa" class="icono-ayuda" />
+            <h3>Casa de Acogida</h3>
+            <p>
+              Ofrece un hogar temporal a un gato mientras encuentra familia.
+            </p>
+            <button class="boton boton-secundario">Acoger</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="seccion fondo-claro">
+       <div class="encabezado-seccion">
+          <h2>Sobre Nosotros</h2>
+          
+        </div>
+      <div class="contenedor grid-nosotros">
+
+        <div class="nosotros-imagen">
+          <img
+            src="assets/Protectora.webp"
+            alt="Voluntarios"
+          />
+        </div>
+
+        <div class="nosotros-texto">
+          <p>
+            Refugio Ronroneo es una organización sin ánimo de lucro dedicada al
+            rescate, rehabilitación y adopción. Desde 2010, hemos ayudado a más
+            de 2,500 gatos.
+          </p>
+
+          <div class="lista-ventajas">
+            <div class="ventaja">
+              <strong
+                ><span
+                  ><img src="assets/veterinario.png" style="height: 15px"
+                /></span>
+                Atención Veterinaria:</strong
+              >
+              Todos reciben atención médica completa.
+            </div>
+            <div class="ventaja">
+              <strong
+                ><span
+                  ><img src="assets/seguimiento.png" style="height: 15px"
+                /></span>
+                Seguimiento:</strong
+              >
+              Brindamos apoyo continuo post-adopción.
+            </div>
+            <div class="ventaja">
+              <strong
+                ><span
+                  ><img src="assets/equipo.png" style="height: 17px" /></span
+                >Equipo Dedicado:</strong
+              >
+              Más de 50 voluntarios comprometidos.
+            </div>
+          </div>
+          <button class="boton boton-primario boton-grande">
+            Conoce Nuestro Trabajo
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--RESEÑAS-->
+    <section id="reseñas" class="seccion">
+      <div class="contenedor">
+        <div class="encabezado-seccion">
+          <h2>Lo Que Dicen Nuestras Familias</h2>
+          <p>
+            Historias reales de personas que han adoptado o colaborado con
+            nosotros.
+          </p>
+        </div>
+
+        <div class="grid-reseñas">
+          <div class="tarjeta-reseñas">
+            <div class="reseña-header">
+              <div class="foto-reseña">MG</div>
+              <div class="reseña-info">
+                <h4>María García</h4>
+                <div class="estrellas">
+                  <span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px"
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <p class="texto-reseña">
+              "Adopté a Luna hace 6 meses y ha sido la mejor decisión. El equipo
+              de la protectora fue increíble durante todo el proceso. ¡Gracias
+              por vuestro trabajo!"
+            </p>
+          </div>
+
+          <div class="tarjeta-reseñas">
+            <div class="reseña-header">
+              <div class="foto-reseña">CR</div>
+              <div class="reseña-info">
+                <h4>Carlos Ruiz</h4>
+                <div class="estrellas">
+                  <span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px"
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <p class="texto-reseña">
+              "Como voluntario, puedo decir que es una experiencia maravillosa.
+              Ver a estos gatos encontrar hogares amorosos no tiene precio."
+            </p>
+          </div>
+
+          <div class="tarjeta-reseñas">
+            <div class="reseña-header">
+              <div class="foto-reseña">LM</div>
+              <div class="reseña-info">
+                <h4>Laura Martínez</h4>
+                <div class="estrellas">
+                  <span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px" /></span
+                  ><span
+                    ><img
+                      src="assets/estrella.png"
+                      style="height: 20px; margin-bottom: -5px"
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <p class="texto-reseña">
+              "Adopté a Simba y mi vida cambió completamente. Es el compañero
+              perfecto. La protectora hace un trabajo excepcional."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--FOOTER-->
+    <footer id="contacto" class="footer">
+      <div class="contenedor grid-footer">
+        <div class="columna-footer">
+          <div>
+            <div class="logo-footer">
+              <strong class="titulo-footer">Refugio Ronroneo</strong>
+            </div>
+            <p class="parrafo-footer">
+              Dedicados a dar una segunda oportunidad a gatos que necesitan un
+              hogar amoroso.
+            </p>
+          </div>
+        </div>
+        <div class="columna-footer">
+          <div>
+            <h3 class="titulo-footer">Enlaces</h3>
+            <ul>
+              <li>
+                <a class="titulo-footer" href="#adopta">Gatos en Adopción</a>
+              </li>
+              <li><a class="titulo-footer" href="#ayuda">Cómo Ayudar</a></li>
+              <li>
+                <a class="titulo-footer" href="#nosotros">Sobre Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="columna-footer">
+          <div>
+            <h3 class="titulo-footer">Contacto</h3>
+            <ul>
+              <li class="parrafo-footer">
+                <span
+                  ><img
+                    src="assets/ubicacion.png"
+                    style="height: 20px; margin-bottom: -5px"
+                /></span>
+                Calle del Gato, 123, Madrid
+              </li>
+              <li class="parrafo-footer">
+                <span
+                  ><img
+                    src="assets/telefono.png"
+                    style="height: 20px; margin-bottom: -5px"
+                /></span>
+                +34 912 345 678
+              </li>
+              <li class="parrafo-footer">
+                <span
+                  ><img
+                    src="assets/correo.png"
+                    style="height: 20px; margin-bottom: -5px"
+                /></span>
+                info@Refugioronroneo.org
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="parrafo-footer">
+          © 2026 Refugio Ronroneo. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

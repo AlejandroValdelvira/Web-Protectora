@@ -1,0 +1,477 @@
+/* RESET  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #030213;
+}
+/*Estilo general para limitar la amplitud del contenido*/
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.seccion {
+  padding: 80px 0;
+}
+
+.fondo-claro {
+  background-color: #f8f9fa;
+}
+/*Estilos de los encabezados*/
+.encabezado-seccion {
+  text-align: center;
+  margin-bottom: 50px;
+  h2{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  p{
+    font-size: 1.2rem;
+    color: #666666;
+  }
+}
+
+
+
+/*  BOTONES  */
+.boton {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+}
+
+.boton-primario {
+  background-color: #030213;
+  color: #ffffff;
+}
+
+.boton-animacion:hover {
+  animation: Animacion-corazon 1s ease forwards;
+}
+
+@keyframes Animacion-corazon {
+  to {
+    background-color: #c42f2f;
+  }
+}
+
+.boton-secundario {
+  background-color: transparent;
+  border: 2px solid #030213;
+  color: #030213;
+}
+
+.boton-secundario:hover {
+  background-color: #030213;
+  color: #ffffff;
+}
+
+.boton-borde-blanco {
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
+
+.boton-borde-blanco:hover {
+  background-color: #ffffff;
+  color: #030213;
+}
+
+.boton-grande {
+  padding: 15px 35px;
+  font-size: 1.1rem;
+}
+
+
+/*  CABECERA   */
+.cabecera {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 3;
+}
+
+.contenido-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #030213;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.logo-icono {
+  height: 90px;
+}
+
+.navegacion a {
+  text-decoration: none;
+  color: #666666;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navegacion a:hover {
+  color: #030213;
+}
+
+/*  PORTADA  */
+.portada {
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-image: url("assets/Portada.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.capa-oscura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.contenido-portada {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.contenido-portada h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.botones {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/*  ESTADÍSTICAS no se si quitar... */
+.estadisticas {
+  background-color: #030213;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.grid-estadisticas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.dato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dato .numero {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.dato .texto {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/*  TARJETAS GATOS  */
+.grid-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.tarjeta {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+/* Mover y sar sombra con el Hover*/
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-contenedor {
+  position: relative;
+  height: 250px;
+}
+
+.imagen-contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #030213;
+}
+
+.contenido-tarjeta {
+  padding: 20px;
+}
+
+.titulo-tarjeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.titulo-tarjeta h3 {
+  font-size: 1.5rem;
+}
+
+.detalles {
+  display: flex;
+  gap: 15px;
+  color: #666666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.descripcion {
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.badge-color {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  color: #555555;
+}
+
+.centrar-boton {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* AYUDA    */
+.grid-ayuda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.tarjeta-ayuda {
+  text-align: center;
+  padding: 30px 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-ayuda:hover {
+  border-color: #030213;
+  transform: scale(1.05);
+}
+
+.icono-ayuda {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.tarjeta-ayuda p {
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+/*  SOBRE NOSOTROS  */
+.grid-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.nosotros-imagen img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ventaja {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* RESEÑAS */
+.grid-reseñas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.tarjeta-reseñas {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reseña-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+/*Simular avatares con texto*/
+.foto-reseña {
+  width: 50px;
+  height: 50px;
+  background-color: #030213;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  
+}
+
+.reseña-info h4 {
+  margin-bottom: 2px;
+  font-size: 1.1rem;
+}
+
+.texto-reseña {
+  font-style: italic;
+  color: #666666;
+}
+
+/* FOOTER  */
+.footer {
+  background-color: #000000;
+  padding: 60px 0 20px;
+  border-top: 1px solid #eee;
+}
+
+.grid-footer  {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.logo-footer {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #030213;
+}
+.columna-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  }
+  ul {
+  list-style: none;
+  }
+  ul li {
+  margin-bottom: 10px;
+  }
+  a {
+  color: #ffffff;
+  text-decoration: none;
+  }
+}
+
+.columna-footer a:hover {
+  color: #b9b9b9;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  color: #888888;
+}
+
+.titulo-footer , .parrafo-footer {
+  color: white;
+}
+/*  medua query para moviles  */
+@media (max-width: 768px) {
+  .contenido-cabecera {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navegacion {
+    display: none;
+  }
+
+  .contenido-portada h1 {
+    font-size: 2.5rem;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  .grid-estadisticas {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-nosotros {
+    grid-template-columns: 1fr;
+  }
+}
